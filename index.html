@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saransh | Architecture</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+    <div class="bg-lines">
+        <div class="ring outer"></div>
+        <div class="ring middle">
+            <!-- Morse code S (...) -->
+            <div class="morse-s">
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+            </div>
+        </div>
+        <div class="ring inner"></div>
+    </div>
+
+    <nav class="glass-nav">
+        <div class="logo">
+            <span class="logo-light">North Side</span><br/>
+            <span class="logo-gold">Designs</span>
+        </div>
+        <div class="links">
+            <a href="#work" class="active">Philosophy</a>
+            <a href="#about">Projects</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </nav>
+
+    <main class="split-layout">
+        <section class="left-panel">
+            <div class="content-wrapper">
+                <div class="title-group">
+                    <h1 class="hero-title">
+                        Saransh<br>Sharma
+                    </h1>
+                    
+                    <p class="hero-dates">2022-Present</p>
+                </div>
+                
+                <p class="hero-quote">
+                    "The highest activity a human being can attain is learning for understanding, because to understand is to be free."
+                </p>
+
+                <!-- Scroll indicator removed per user request -->
+            </div>
+        </section>
+
+        <!-- Organic Scatter Stamps Container -->
+        <div class="stamps-container">
+            <a href="#writings" class="ticket-stamp stamp-writings">
+                <span class="initial">W</span>
+                <span class="label">Writings</span>
+            </a>
+            <a href="#research" class="ticket-stamp stamp-research">
+                <span class="initial">R</span>
+                <span class="label">Research</span>
+            </a>
+            <a href="#projects" class="ticket-stamp stamp-projects">
+                <span class="initial">P</span>
+                <span class="label">Projects</span>
+            </a>
+            <a href="#clicks" class="ticket-stamp stamp-clicks">
+                <span class="initial">C</span>
+                <span class="label">Clicks</span>
+            </a>
+        </div>
+
+        <section class="right-panel">
+            <div class="image-gallery-wrapper">
+                <div class="main-image-box">
+                    <img src="./profile.png" alt="Saransh Portrait Center" class="hero-profile">
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <div style="height: 130vh; position: relative; pointer-events: none;"></div>
+
+
+    <section class="book-section" id="present-works">
+        <div class="book-bg-ornament">NSD</div>
+        <div class="book-emerge-wrapper">
+            <p class="book-eyebrow">Architecture Portfolio · 2022–2025</p>
+            <h2 class="book-section-heading">Present <em>Works</em></h2>
+
+            <div class="flipbook-frame" id="flipbook-frame">
+                <iframe
+                    src="https://online.fliphtml5.com/mwqkr/vpgq/"
+                    seamless="seamless"
+                    scrolling="no"
+                    frameborder="0"
+                    allowtransparency="true"
+                    allowfullscreen="true"
+                    title="Panchtantra Ropeway Station — Architecture Portfolio"
+                ></iframe>
+            </div>
+
+            <a class="book-open-link" href="https://online.fliphtml5.com/mwqkr/vpgq/" target="_blank" rel="noopener">
+                Open Full Screen
+                <svg width="16" height="10" viewBox="0 0 16 10"><line x1="0" y1="5" x2="14" y2="5" stroke="currentColor" stroke-width="1.2"/><polyline points="10,1 14,5 10,9" stroke="currentColor" stroke-width="1.2" fill="none"/></svg>
+            </a>
+        </div>
+    </section>
+
+    <!-- SVG overlay for curly connecting lines -->
+    <svg id="stamp-lines" xmlns="http://www.w3.org/2000/svg"
+         style="position:fixed;top:0;left:0;width:100%;height:100%;pointer-events:none;z-index:0;overflow:visible;opacity:0;transition:opacity 0.5s ease;">
+    </svg>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@1.0.19/bundled/lenis.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
